@@ -34,7 +34,6 @@
 .world {
     width: 100%;
     height: 2.6rem;
-    /*background: orange;*/
 }
 /*知识天地*/
 .knowledge-list {
@@ -43,7 +42,6 @@
     margin-bottom: .5rem;
     width: 90%;
     height: 1.8rem;
-    /*background: skyblue;*/
 }
 .knowledge-img {
     float: left;

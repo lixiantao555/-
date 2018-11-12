@@ -86,7 +86,6 @@ body {
     margin-top: .2rem;
     width: 5.2rem;
     height: .8rem;
-    /*background: greenyellow;*/
 }
 .quality {
     font-size: .3rem;
@@ -133,7 +132,6 @@ body {
     justify-content: space-around;
     width: 5.2rem;
     height: .6rem;
-    /*background: greenyellow;*/
     font-size: .4rem;
     line-height: .6rem;
 }
@@ -291,4 +289,3 @@ body {
 .area-list.selected {
     color: #3be0d0;
 }
-/*http://alina.applinzi.com/life/*/
