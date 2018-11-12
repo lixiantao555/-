@@ -7,7 +7,7 @@
     color: #666;
 }
 .full {
-    font-size: .8rem;
+    font-size: .6rem;
     font-weight: 900;
     color: red;
 }
@@ -17,7 +17,8 @@
     margin-top: .6rem;
     margin-left: 5%;
     width: 90%;
-    height: .8rem;
+    height: 1rem;
+    border-bottom: .01rem solid #eee;
 }
 .integration .name {
     font-size: .4rem;
