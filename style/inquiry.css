@@ -1,0 +1,294 @@
+body {
+    width: 7.5rem;
+    height: 13.34rem;
+    overflow: auto;
+}
+.bg-color {
+    padding-top: .3rem;
+    width: 7.5rem;
+    height: 13.04rem;
+    background: #eee;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 7.5rem;
+    height: 1rem;
+    background: #fff;
+}
+.contents {
+    display: flex;
+    padding: 0 .4rem;
+    justify-content: space-around;
+    align-items: center;
+    width: 2.4rem;
+    height: 100%;
+    border-right: .01rem solid #000;
+    font-size: .34rem;
+    color: #666;
+    text-align: left;
+    line-height: 1rem;
+}
+.nav .distance {
+    border-right: none;
+}
+.nav .down {
+    display: inline-block;
+    width: .4rem;
+    height: .4rem;
+    background: url("../image/down.png") no-repeat center / .4rem;
+}
+.doctor-list {
+    float: left;
+    padding-top: .6rem;
+    box-sizing: border-box;
+    margin-top: .3rem;
+    margin-left: .15rem;
+    width: 7.2rem;
+    height: 5rem;
+    background: #fff;
+}
+.photo {
+    float: left;
+    padding-top: .6rem;
+    box-sizing: border-box;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url("../image/4.jpg") no-repeat center;
+    border-radius: 50%;
+}
+.right-con {
+    float: right;
+    box-sizing: border-box;
+    padding-right: .4rem;
+    margin-top: -.6rem;
+    width: 5.2rem;
+    height: 5rem;
+}
+.human {
+    margin-top: .2rem;
+    font-size: .36rem;
+    color: #333333;
+}
+.hospital {
+    line-height: .6rem;
+}
+.skilled {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: .3rem;
+    color: #999;
+}
+.top {
+    display: flex;
+    justify-content: space-around;
+    margin-top: .2rem;
+    width: 5.2rem;
+    height: .8rem;
+    /*background: greenyellow;*/
+}
+.quality {
+    font-size: .3rem;
+    line-height: .8rem;
+    color: #333;
+}
+.top-one {
+    width: .5rem;
+    height: .5rem;
+}
+.line {
+    margin-top: .2rem;
+    width: 5.2rem;
+    height: .01rem;
+    background: #999;
+}
+.performance {
+    padding-left: .5rem;
+    padding: 0;
+    background-size: .5rem;
+    margin-top: .2rem;
+    font-size: .5rem;
+    line-height: .64rem;
+    font-weight: 900;
+    color: #01c9ac;
+}
+.star-img {
+    display: inline-block;
+    margin-right: .1rem;
+    width: .6rem;
+    height: .6rem;
+    background: blue;
+}
+.question {
+    margin-left: .1rem;
+    font-size: .4rem;
+    line-height: .5rem;
+    font-weight: normal;
+    color: #999;
+}
+.phone {
+    display: flex;
+    margin-top: .2rem;
+    justify-content: space-around;
+    width: 5.2rem;
+    height: .6rem;
+    /*background: greenyellow;*/
+    font-size: .4rem;
+    line-height: .6rem;
+}
+.right-line {
+    width: 50%;
+    border-right: .01rem solid #999;
+    margin-left: -.3rem;
+}
+.tuwen {
+    color: #999999;
+}
+/*默认排序*/
+.mask {
+    display: none;
+    position: absolute;
+    z-index: 30;
+    margin-top: 1.3rem;
+    width: 7.5rem;
+    height: 12.04rem;
+    background: rgba(0, 0, 0, 0.8)
+}
+.white {
+    margin-top: -.02rem;
+    width: 100%;
+    height: 5rem;
+    background: #fff;
+}
+.price-list {
+    margin-left: 5%;
+    width: 90%;
+    font-size: .4rem;
+    color: #333;
+    line-height: 1rem;
+    border-bottom: .01rem solid #999;
+}
+/*点击变色*/
+.price-list.selected{
+    color: #3be0d0;
+}
+.price-list:nth-child(5) {
+    border-bottom: none;
+}
+
+/*地区选择*/
+.area-mask {
+    display: none;
+    position: absolute;
+    z-index: 30;
+    margin-top: 1.3rem;
+    width: 7.5rem;
+    height: 12.04rem;
+    background: rgba(0, 0, 0, 0.8)
+}
+.area-white {
+    margin-top: -.02rem;
+    width: 100%;
+    height: 10rem;
+    overflow: scroll;
+    background: #fff;
+}
+.area-list {
+    margin-left: 5%;
+    width: 90%;
+    font-size: .4rem;
+    color: #333;
+    line-height: 1rem;
+    border-bottom: .01rem solid #999;
+}
+.area-list:nth-child(1) {
+    color: #3be0d0;
+}
+.area:nth-child(5) {
+    border-bottom: none;
+}
+::-webkit-scrollbar {
+    /*隐藏滚轮*/
+    display: none;
+}
+
+/*筛选*/
+.mask-check {
+    display: none;
+    position: absolute;
+    z-index: 30;
+    margin-top: 1.3rem;
+    width: 7.5rem;
+    height: 12.04rem;
+    background: rgba(0, 0, 0, 0.8)
+}
+.white-check {
+    margin-top: -.02rem;
+    width: 100%;
+    height: 7.8rem;
+    overflow: scroll;
+    background: #fff;
+}
+.check-list {
+    margin-left: 5%;
+    width: 90%;
+    font-size: .4rem;
+    color: #333;
+    line-height: 1rem;
+    border-bottom: .01rem solid #999;
+}
+.section {
+    margin: .3rem 0 0 .3rem;
+    font-size: .4rem;
+    color: #666;
+}
+.num {
+    margin: .3rem 0 0 .3rem;
+    display: flex;
+    justify-content: space-around;
+}
+.num-list {
+    width: 1.54rem;
+    height: .8rem;
+    background: #eee;
+    font-size: .3rem;
+    text-align: center;
+    line-height: .8rem;
+    border-radius: .3rem;
+}
+.cont {
+    margin-bottom: 1rem;
+}
+.height-line {
+    margin: 1rem 0 1rem 0;
+    width: 100%;
+    height: .01rem;
+    background: #999;
+}
+.stroke {
+    float: right;
+    width: 2rem;
+    height: 1rem;
+    background: pink;
+    border-radius: .7rem;
+    font-size: .4rem;
+    color: #333;
+    text-align: center;
+    line-height: 1rem;
+}
+.reset {
+    margin-right: .4rem;
+    background: #fff;
+}
+.affirm {
+    float: right;
+    margin-right: .4rem;
+    background: #01c9ac;
+    color: #fff;
+}
+/*点击变色*/
+.area-list.selected {
+    color: #3be0d0;
+}
+/*http://alina.applinzi.com/life/*/

@@ -1,0 +1,91 @@
+.picture {
+    width: 100%;
+    height: 3rem;
+    background-image: url(../image/1.jpg);
+    background-size: 7.5rem;
+    background-repeat: no-repeat;
+}
+/*名医课程*/
+.doctor {
+    display: flex;
+    padding-left: 10%;
+    width: 80%;
+    height: 1.5rem;
+    margin: .1rem 0;
+}
+.cut {
+    margin-top: .65rem;
+    margin-left: .2rem;
+    width: 20%;
+    height: .05rem;
+    background: #118eea;
+}
+.cut-right {
+    margin-right: .2rem;
+}
+.course {
+    width: 60%;
+    height: 1.5rem;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: .5rem;
+    color: #118eea;
+}
+.world {
+    width: 100%;
+    height: 2.6rem;
+    /*background: orange;*/
+}
+/*知识天地*/
+.knowledge-list {
+    float: left;
+    margin-left: 5%;
+    margin-bottom: .5rem;
+    width: 90%;
+    height: 1.8rem;
+    /*background: skyblue;*/
+}
+.knowledge-img {
+    float: left;
+    width: 30%;
+    height: 1.8rem;
+    background: url("../image/5.jpg") no-repeat center;
+}
+.knowledge-particulars {
+    margin-left: .2rem;
+}
+.knowledge-title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 4%;
+    width: 68%;
+    height: 1.2em;
+    float: left;
+    font-size: .4rem;
+    color: #333333;
+}
+.knowledge-con {
+    float: left;
+    overflow: hidden;
+    margin-left: 4%;
+    margin-top: .2rem;
+    width: 68%;
+    height: 3.6em;
+    font-size: .3rem;
+    line-height: .4rem;
+    color: #666;
+}
+/*轮播图*/
+html, body {
+    position: relative;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    background: url("../image/6.jpg") no-repeat center;
+    background-size: cover;
+}

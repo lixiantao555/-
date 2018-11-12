@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>知识天地</title>
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/knowledge.css">
+  <link rel="stylesheet" href="./style/swiper.css">
+</head>
+<body>
+  <div class="picture"></div>
+  <!--名医课程-->
+  <div class="doctor">
+      <div class="cut"></div>
+      <div class="course">名医课程</div>
+      <div class="cut cut-right"></div>
+  </div>
+  <div class="world">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+<!--知识天地-->
+  <div class="doctor">
+    <div class="cut"></div>
+    <div class="course">知识天地</div>
+    <div class="cut cut-right"></div>
+  </div>
+  <dl class="knowledge-list">
+    <dt class="knowledge-img"></dt>
+    <dd class="knowledge-particulars">
+      <h2 class="knowledge-title">我们十分努力，只为您十分满意</h2>
+      <p class="knowledge-con">
+        冒泡事件：当一个组件上的事件被触发后，该事件会向父节点传递。
+        非冒泡事件：当一个组件上的事件被触发后，该事件不会向父节点传递
+      </p>
+    </dd>
+  </dl>
+  <dl class="knowledge-list">
+    <dt class="knowledge-img"></dt>
+    <dd class="knowledge-particulars">
+      <h2 class="knowledge-title">我们十分努力，只为您十分满意</h2>
+      <p class="knowledge-con">
+        冒泡事件：当一个组件上的事件被触发后，该事件会向父节点传递。
+        非冒泡事件：当一个组件上的事件被触发后，该事件不会向父节点传递
+      </p>
+    </dd>
+  </dl>
+  <dl class="knowledge-list">
+    <dt class="knowledge-img"></dt>
+    <dd class="knowledge-particulars">
+      <h2 class="knowledge-title">我们十分努力，只为您十分满意</h2>
+      <p class="knowledge-con">
+        冒泡事件：当一个组件上的事件被触发后，该事件会向父节点传递。
+        非冒泡事件：当一个组件上的事件被触发后，该事件不会向父节点传递
+      </p>
+    </dd>
+  </dl>
+  <dl class="knowledge-list">
+    <dt class="knowledge-img"></dt>
+    <dd class="knowledge-particulars">
+      <h2 class="knowledge-title">我们十分努力，只为您十分满意</h2>
+      <p class="knowledge-con">
+        冒泡事件：当一个组件上的事件被触发后，该事件会向父节点传递。
+        非冒泡事件：当一个组件上的事件被触发后，该事件不会向父节点传递
+      </p>
+    </dd>
+  </dl>
+</body>
+<script src="./js/swiper.min.js"></script>
+<script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth/7.5 + 'px'
+</script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+</html>

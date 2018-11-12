@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>问医生</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/inquiry.css">
+    <script src="https://cdn.bootcss.com/jquery/1.8.1/jquery.js"></script>
+</head>
+<body>
+<!--默认排序-->
+<div class="mask">
+    <ul class="white">
+        <li class="price-list">默认排序</li>
+        <li class="price-list">按咨询量</li>
+        <li class="price-list">按好评率</li>
+        <li class="price-list">按价格升序</li>
+        <li class="price-list">按价格降序</li>
+    </ul>
+</div>
+
+<!--地区-->
+<div class="area-mask">
+    <ul class="area-white">
+        <li class="area-list">全部地区</li>
+        <li class="area-list">北京</li>
+        <li class="area-list">天津</li>
+        <li class="area-list">山东</li>
+        <li class="area-list">河北</li>
+        <li class="area-list">山西</li>
+        <li class="area-list">陕西</li>
+        <li class="area-list">黑龙江</li>
+        <li class="area-list">吉林</li>
+        <li class="area-list">辽宁</li>
+        <li class="area-list">上海</li>
+        <li class="area-list">江苏</li>
+        <li class="area-list">湖北</li>
+        <li class="area-list">湖南</li>
+        <li class="area-list">河北</li>
+        <li class="area-list">内蒙古自治区</li>
+        <li class="area-list">浙江</li>
+        <li class="area-list">安徽</li>
+        <li class="area-list">福建</li>
+        <li class="area-list">江西</li>
+        <li class="area-list">河南</li>
+        <li class="area-list">广东</li>
+        <li class="area-list">广西</li>
+        <li class="area-list">重庆</li>
+        <li class="area-list">四川</li>
+        <li class="area-list">贵州</li>
+        <li class="area-list">云南</li>
+        <li class="area-list">西藏自治区</li>
+        <li class="area-list">甘肃</li>
+        <li class="area-list">青海</li>
+        <li class="area-list">宁夏回族自治区</li>
+        <li class="area-list">新疆维吾尔自治区</li>
+    </ul>
+</div>
+
+<!--筛选-->
+<div class="mask-check">
+    <div class="white-check">
+        <div class="cont">
+            <p class="section">价格区间</p>
+            <ul class="num">
+                <li class="num-list">10-20</li>
+                <li class="num-list">20-30</li>
+                <li class="num-list">30-50</li>
+                <li class="num-list">50以上</li>
+            </ul>
+        </div>
+        <div class="cont">
+            <p class="section">价格区间</p>
+            <ul class="num">
+                <li class="num-list">10-20</li>
+                <li class="num-list">20-30</li>
+                <li class="num-list">30-50</li>
+                <li class="num-list">50以上</li>
+            </ul>
+        </div>
+        <div class="height-line"></div>
+        <p class="stroke affirm">确认</p>
+        <p class="stroke reset">重置</p>
+    </div>
+</div>
+
+<!--/默认排序-->
+    <div class="bg-color">
+        <ul class="nav">
+            <li class="contents screen">默认<span class="down down-tacitly" onclick="sort()"></span></li>
+            <li class="contents price">筛选<span class="down down-choice"></span></li>
+            <li class="contents distance">地区<span class="down down-area"></span></li>
+        </ul>
+        <div class="doctor-list">
+            <div class="photo"></div>
+            <div class="right-con">
+                <p class="human human-name">高鹏骥&nbsp;&nbsp;&nbsp;主任医师</p>
+                <p class="human hospital">北京大学人民医院&nbsp;&nbsp;&nbsp;耳鼻喉科</p>
+                <p class="human skilled">擅长：乙肝、扁桃体肿大、发育不良、佝偻病</p>
+                <ul class="top">
+                    <li class="quality quality-hostipal"><img src="./image/top01.png" alt="" class="top-one">顶级医院</li>
+                    <li class="quality quality-office"><img src="./image/top01.png" alt="" class="top-one">顶级科室</li>
+                    <li class="quality quality-serve"><img src="./image/top02.png" alt="" class="top-one">优质服务</li>
+                </ul>
+                <div class="line"></div>
+                <p class="performance"><img src="./image/star.png" alt="" class="star-img">4.8 <span class="question">497条问题</span></p>
+                <ul class="phone">
+                    <li class="right-line">￥39.9 <span class="tuwen">图文</span></li>
+                    <li>￥150 <span class="tuwen">电话</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="doctor-list">
+            <div class="photo"></div>
+            <div class="right-con">
+                <p class="human human-name">高鹏骥&nbsp;&nbsp;&nbsp;主任医师</p>
+                <p class="human hospital">北京大学人民医院&nbsp;&nbsp;&nbsp;耳鼻喉科</p>
+                <p class="human skilled">擅长：乙肝、扁桃体肿大、发育不良、佝偻病</p>
+                <ul class="top">
+                    <li class="quality quality-hostipal"><img src="./image/top01.png" alt="" class="top-one">顶级医院</li>
+                    <li class="quality quality-office"><img src="./image/top01.png" alt="" class="top-one">顶级科室</li>
+                    <li class="quality quality-serve"><img src="./image/top02.png" alt="" class="top-one">优质服务</li>
+                </ul>
+                <div class="line"></div>
+                <p class="performance"><img src="./image/star.png" alt="" class="star-img">4.8 <span class="question">497条问题</span></p>
+                <ul class="phone">
+                    <li class="right-line">￥39.9 <span class="tuwen">图文</span></li>
+                    <li>￥150 <span class="tuwen">电话</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="doctor-list">
+            <div class="photo"></div>
+            <div class="right-con">
+                <p class="human human-name">高鹏骥&nbsp;&nbsp;&nbsp;主任医师</p>
+                <p class="human hospital">北京大学人民医院&nbsp;&nbsp;&nbsp;耳鼻喉科</p>
+                <p class="human skilled">擅长：乙肝、扁桃体肿大、发育不良、佝偻病</p>
+                <ul class="top">
+                    <li class="quality quality-hostipal"><img src="./image/top01.png" alt="" class="top-one">顶级医院</li>
+                    <li class="quality quality-office"><img src="./image/top01.png" alt="" class="top-one">顶级科室</li>
+                    <li class="quality quality-serve"><img src="./image/top02.png" alt="" class="top-one">优质服务</li>
+                </ul>
+                <div class="line"></div>
+                <p class="performance"><img src="./image/star.png" alt="" class="star-img">4.8 <span class="question">497条问题</span></p>
+                <ul class="phone">
+                    <li class="right-line">￥39.9 <span class="tuwen">图文</span></li>
+                    <li>￥150 <span class="tuwen">电话</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth/7.5 + 'px'
+</script>
+<script src="./js/inquiry.js"></script>
+</html>
